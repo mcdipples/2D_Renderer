@@ -1,0 +1,3669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>secDialog</class>
+ <widget class="QMainWindow" name="secDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1019</width>
+    <height>840</height>
+   </rect>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>520</y>
+      <width>991</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>250</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1000</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="Tab_Shape">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Add Shape</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_addShape">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>971</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <widget class="QWidget" name="tab_Line">
+       <attribute name="title">
+        <string>Line</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>466</width>
+          <height>84</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_18">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>x - value:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBox_line_firstX">
+               <property name="maximum">
+                <number>1000</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>y - value:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBox_line_firstY">
+               <property name="maximum">
+                <number>1000</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line_6">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>x - value:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBox_line_secondX">
+               <property name="maximum">
+                <number>1000</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>y - value:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBox_line_secondY">
+               <property name="maximum">
+                <number>1000</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>110</y>
+          <width>81</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add Shape</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>0</y>
+          <width>223</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>First Coordinate Values</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>0</y>
+          <width>222</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Second Coordinate Values</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>20</y>
+          <width>170</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_73">
+         <item>
+          <widget class="QLabel" name="label_89">
+           <property name="text">
+            <string>Pen Cap Style: </string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_setPenCapStyle_3">
+           <item>
+            <property name="text">
+             <string>Square</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Flat</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Round</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>50</y>
+          <width>204</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_74">
+         <item>
+          <widget class="QLabel" name="label_90">
+           <property name="text">
+            <string>Pen Style: </string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_setPenStyle_2">
+           <item>
+            <property name="text">
+             <string>Solid Line</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Dash Line</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Dot Line</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Dash Dot Line</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Dash Dot Dot Line</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>No Pen</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>80</y>
+          <width>141</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_75">
+         <item>
+          <widget class="QLabel" name="label_91">
+           <property name="text">
+            <string>Pen Width:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBox_setPenWidth_2">
+           <property name="minimum">
+            <number>0</number>
+           </property>
+           <property name="maximum">
+            <number>20</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_7">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>110</y>
+          <width>154</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_76">
+         <item>
+          <widget class="QLabel" name="label_92">
+           <property name="text">
+            <string>Pen Color: </string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_setPenColor_2">
+           <item>
+            <property name="text">
+             <string>Blue</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Red</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Green</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Yellow</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Black</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>White</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Cyan</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Magenta</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Gray</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_8">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>20</y>
+          <width>165</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_77">
+         <item>
+          <widget class="QLabel" name="label_93">
+           <property name="text">
+            <string>Pen Join Style: </string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_setPenJoinStyle_2">
+           <item>
+            <property name="text">
+             <string>Bevel</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Miter</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Round</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_Polyline">
+       <attribute name="title">
+        <string>Polyline</string>
+       </attribute>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1st Coordinate </string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_polyline_firstY">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>60</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_polyline_firstX">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>30</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_114">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>y-value</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_88">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>x-value</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>0</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>2nd Coordinate </string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_polyline_secondY">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>60</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_polyline_secondX">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>30</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>-10</y>
+          <width>129</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>3rd Coordinate </string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_polyline_thirdY">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>60</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_polyline_thirdX">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>30</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_polyline_fourthY">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>60</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>-10</y>
+          <width>129</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>4th Coordinate </string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_polyline_fourthX">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>30</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_polyline_fifthX">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>30</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>-10</y>
+          <width>128</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>5th Coordinate </string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_polyline_fifthY">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>60</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_polyline_sixthY">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>60</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_23">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>-10</y>
+          <width>129</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>6th Coordinate </string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_polyline_sixthX">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>30</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_5">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>60</y>
+          <width>61</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_6">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>30</y>
+          <width>61</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_68">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>10</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>7th Coordinate</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_95">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>10</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>8th Coordinate</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_7">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>30</y>
+          <width>61</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_8">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>60</y>
+          <width>61</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>30</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add Shape</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_polyline_pointsAdded">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>40</y>
+          <width>195</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>2</number>
+        </property>
+        <property name="maximum">
+         <number>6</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_26">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>20</y>
+          <width>119</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Number of Points added:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_setPenCapStyle_6">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>120</y>
+          <width>67</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Square</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flat</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Round</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_112">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>74</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pen Cap Style: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_setPenStyle_5">
+        <property name="geometry">
+         <rect>
+          <x>254</x>
+          <y>120</y>
+          <width>112</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Solid Line</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dash Line</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dot Line</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dash Dot Line</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dash Dot Dot Line</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>No Pen</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_113">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>120</y>
+          <width>58</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pen Style: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_setPenWidth_5">
+        <property name="geometry">
+         <rect>
+          <x>453</x>
+          <y>120</y>
+          <width>66</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>0</number>
+        </property>
+        <property name="maximum">
+         <number>20</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_115">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>120</y>
+          <width>67</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pen Width:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_setPenColor_5">
+        <property name="geometry">
+         <rect>
+          <x>611</x>
+          <y>120</y>
+          <width>68</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Blue</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Red</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Green</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Yellow</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Black</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>White</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Cyan</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Magenta</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Gray</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_116">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>120</y>
+          <width>65</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pen Color: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_setPenJoinStyle_5">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>120</y>
+          <width>66</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Bevel</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Miter</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Round</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_117">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>120</y>
+          <width>74</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pen Join Style: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_Polygon">
+       <attribute name="title">
+        <string>Polygon</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>0</y>
+          <width>591</width>
+          <height>163</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_17">
+         <property name="spacing">
+          <number>1</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_36">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_27">
+               <property name="text">
+                <string>1st Coordinate </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_20">
+               <item>
+                <widget class="QLabel" name="label_28">
+                 <property name="text">
+                  <string>x-value:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_polygon_firstX">
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_21">
+               <item>
+                <widget class="QLabel" name="label_29">
+                 <property name="text">
+                  <string>y-value:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_polygon_firstY">
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="Line" name="line_8">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_10">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_30">
+               <property name="text">
+                <string>2nd Coordinate </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_22">
+               <item>
+                <widget class="QLabel" name="label_31">
+                 <property name="text">
+                  <string>x-value:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_polygon_secondX">
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_23">
+               <item>
+                <widget class="QLabel" name="label_32">
+                 <property name="text">
+                  <string>y-value:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_polygon_secondY">
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="Line" name="line_10">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_11">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_33">
+               <property name="text">
+                <string>3rd Coordinate </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_24">
+               <item>
+                <widget class="QLabel" name="label_34">
+                 <property name="text">
+                  <string>x-value:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_polygon_thirdX">
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_25">
+               <item>
+                <widget class="QLabel" name="label_35">
+                 <property name="text">
+                  <string>y-value:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_polygon_thirdY">
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="Line" name="line_12">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_12">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_36">
+               <property name="text">
+                <string>4th Coordinate </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_26">
+               <item>
+                <widget class="QLabel" name="label_37">
+                 <property name="text">
+                  <string>x-value:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_polygon_fourthX">
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_27">
+               <item>
+                <widget class="QLabel" name="label_38">
+                 <property name="text">
+                  <string>y-value:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_polygon_fourthY">
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_37">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_13">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_39">
+               <property name="text">
+                <string>5th Coordinate </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_28">
+               <item>
+                <widget class="QLabel" name="label_40">
+                 <property name="text">
+                  <string>x-value:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_polygon_fifthX">
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_29">
+               <item>
+                <widget class="QLabel" name="label_41">
+                 <property name="text">
+                  <string>y-value:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_polygon_fifthY">
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="Line" name="line_9">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_14">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_42">
+               <property name="text">
+                <string>6th Coordinate </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_30">
+               <item>
+                <widget class="QLabel" name="label_43">
+                 <property name="text">
+                  <string>x-value:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_polygon_sixthX">
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_31">
+               <item>
+                <widget class="QLabel" name="label_44">
+                 <property name="text">
+                  <string>y-value:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_polygon_sixthY">
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="Line" name="line_11">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_15">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_45">
+               <property name="text">
+                <string>7th Coordinate </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_32">
+               <item>
+                <widget class="QLabel" name="label_46">
+                 <property name="text">
+                  <string>x-value:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_polygon_seventhX">
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_33">
+               <item>
+                <widget class="QLabel" name="label_47">
+                 <property name="text">
+                  <string>y-value:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_polygon_seventhY">
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="Line" name="line_13">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_16">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_48">
+               <property name="text">
+                <string>8th Coordinate </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_34">
+               <item>
+                <widget class="QLabel" name="label_49">
+                 <property name="text">
+                  <string>x-value:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_polygon_eighthX">
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_35">
+               <item>
+                <widget class="QLabel" name="label_50">
+                 <property name="text">
+                  <string>y-value:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_polygon_eighthY">
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>70</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add Shape</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_51">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>10</y>
+          <width>119</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Number of Points added:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_polygon_pointsAdded">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>30</y>
+          <width>91</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <number>8</number>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_setPenStyle_6">
+        <property name="geometry">
+         <rect>
+          <x>840</x>
+          <y>50</y>
+          <width>112</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Solid Line</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dash Line</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dot Line</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dash Dot Line</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dash Dot Dot Line</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>No Pen</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_119">
+        <property name="geometry">
+         <rect>
+          <x>776</x>
+          <y>50</y>
+          <width>58</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pen Style: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_setPenWidth_6">
+        <property name="geometry">
+         <rect>
+          <x>883</x>
+          <y>80</y>
+          <width>66</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>0</number>
+        </property>
+        <property name="maximum">
+         <number>20</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_120">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>80</y>
+          <width>67</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pen Width:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_setPenColor_6">
+        <property name="geometry">
+         <rect>
+          <x>881</x>
+          <y>110</y>
+          <width>68</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Blue</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Red</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Green</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Yellow</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Black</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>White</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Cyan</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Magenta</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Gray</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_121">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>110</y>
+          <width>65</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pen Color: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_setPenJoinStyle_7">
+        <property name="geometry">
+         <rect>
+          <x>890</x>
+          <y>140</y>
+          <width>66</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Bevel</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Miter</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Round</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_122">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>140</y>
+          <width>74</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pen Join Style: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_setPenCapStyle_7">
+        <property name="geometry">
+         <rect>
+          <x>880</x>
+          <y>20</y>
+          <width>67</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Square</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flat</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Round</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_118">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>20</y>
+          <width>74</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pen Cap Style: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_123">
+        <property name="geometry">
+         <rect>
+          <x>626</x>
+          <y>100</y>
+          <width>68</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Brush Color: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_setBrushColor_5">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>100</y>
+          <width>68</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Blue</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Red</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Green</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Yellow</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Black</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>White</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Cyan</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Magenta</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Gray</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_124">
+        <property name="geometry">
+         <rect>
+          <x>625</x>
+          <y>130</y>
+          <width>69</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Brush Style: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_setBrushStyle_5">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>130</y>
+          <width>82</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>No Brush</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Solid Brush</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hor Pattern</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ver Pattern</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_Rectangle">
+       <attribute name="title">
+        <string>Rectangle</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget_16">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>159</width>
+          <height>82</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_18">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_48">
+           <item>
+            <widget class="QLabel" name="label_61">
+             <property name="text">
+              <string>x - value:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_49">
+           <item>
+            <widget class="QLabel" name="label_62">
+             <property name="text">
+              <string>y - value:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_2">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>20</y>
+          <width>141</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_19">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_51">
+           <item>
+            <widget class="QLabel" name="label_63">
+             <property name="text">
+              <string>Length: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_3">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line_19">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_50">
+           <item>
+            <widget class="QLabel" name="label_64">
+             <property name="text">
+              <string>Width: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_4">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>110</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add Shape</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_60">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>0</y>
+          <width>157</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Center Coordinate Values</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_11">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>20</y>
+          <width>170</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_80">
+         <item>
+          <widget class="QLabel" name="label_96">
+           <property name="text">
+            <string>Pen Cap Style: </string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_setPenCapStyle_4">
+           <item>
+            <property name="text">
+             <string>Square</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Flat</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Round</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_12">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>50</y>
+          <width>204</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_81">
+         <item>
+          <widget class="QLabel" name="label_97">
+           <property name="text">
+            <string>Pen Style: </string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_setPenStyle_3">
+           <item>
+            <property name="text">
+             <string>Solid Line</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Dash Line</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Dot Line</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Dash Dot Line</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Dash Dot Dot Line</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>No Pen</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_13">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>80</y>
+          <width>141</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_82">
+         <item>
+          <widget class="QLabel" name="label_98">
+           <property name="text">
+            <string>Pen Width:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBox_setPenWidth_3">
+           <property name="minimum">
+            <number>0</number>
+           </property>
+           <property name="maximum">
+            <number>20</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_14">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>110</y>
+          <width>154</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_83">
+         <item>
+          <widget class="QLabel" name="label_99">
+           <property name="text">
+            <string>Pen Color: </string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_setPenColor_3">
+           <item>
+            <property name="text">
+             <string>Blue</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Red</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Green</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Yellow</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Black</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>White</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Cyan</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Magenta</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Gray</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_19">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>20</y>
+          <width>165</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_84">
+         <item>
+          <widget class="QLabel" name="label_100">
+           <property name="text">
+            <string>Pen Join Style: </string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_setPenJoinStyle_3">
+           <item>
+            <property name="text">
+             <string>Bevel</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Miter</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Round</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_20">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>50</y>
+          <width>165</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_85">
+         <item>
+          <widget class="QLabel" name="label_101">
+           <property name="text">
+            <string>Brush Color: </string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_setBrushColor_3">
+           <item>
+            <property name="text">
+             <string>Blue</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Red</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Green</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Yellow</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Black</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>White</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Cyan</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Magenta</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Gray</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_21">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>80</y>
+          <width>189</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_86">
+         <item>
+          <widget class="Line" name="line_22">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_102">
+           <property name="text">
+            <string>Brush Style: </string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_setBrushStyle_3">
+           <item>
+            <property name="text">
+             <string>No Brush</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Solid Brush</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hor Pattern</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ver Pattern</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_Ellipse">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="title">
+        <string>Ellipse</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>159</width>
+          <height>86</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_20">
+         <item>
+          <widget class="QLabel" name="label_65">
+           <property name="text">
+            <string>Center Coordinate Values</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_52">
+           <item>
+            <widget class="QLabel" name="label_66">
+             <property name="text">
+              <string>x - value:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_ellipse_firstX">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_53">
+           <item>
+            <widget class="QLabel" name="label_67">
+             <property name="text">
+              <string>y - value:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_ellipse_firstY">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>120</y>
+          <width>101</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add Shape</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>10</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Axis Lengths</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_103">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>30</y>
+          <width>121</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>x-axis length: </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_104">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>70</y>
+          <width>121</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>y-axis length: </string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_ellipse_axisX_2">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>30</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_ellipse_axisY_2">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>70</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_18">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>30</y>
+          <width>170</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_87">
+         <item>
+          <widget class="QLabel" name="label_105">
+           <property name="text">
+            <string>Pen Cap Style: </string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_setPenCapStyle_5">
+           <item>
+            <property name="text">
+             <string>Square</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Flat</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Round</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_106">
+        <property name="geometry">
+         <rect>
+          <x>406</x>
+          <y>60</y>
+          <width>58</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pen Style: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_setPenStyle_4">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>60</y>
+          <width>112</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Solid Line</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dash Line</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dot Line</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dash Dot Line</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dash Dot Dot Line</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>No Pen</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_108">
+        <property name="geometry">
+         <rect>
+          <x>409</x>
+          <y>120</y>
+          <width>65</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pen Color: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_setPenColor_4">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>120</y>
+          <width>68</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Blue</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Red</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Green</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Yellow</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Black</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>White</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Cyan</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Magenta</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Gray</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_109">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>30</y>
+          <width>74</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pen Join Style: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_setPenJoinStyle_4">
+        <property name="geometry">
+         <rect>
+          <x>720</x>
+          <y>30</y>
+          <width>66</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Bevel</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Miter</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Round</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="comboBox_setBrushColor_4">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>60</y>
+          <width>68</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Blue</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Red</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Green</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Yellow</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Black</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>White</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Cyan</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Magenta</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Gray</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_110">
+        <property name="geometry">
+         <rect>
+          <x>636</x>
+          <y>60</y>
+          <width>68</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Brush Color: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_setBrushStyle_4">
+        <property name="geometry">
+         <rect>
+          <x>705</x>
+          <y>90</y>
+          <width>82</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>No Brush</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Solid Brush</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hor Pattern</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ver Pattern</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_111">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>90</y>
+          <width>69</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Brush Style: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_107">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>90</y>
+          <width>67</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pen Width:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_setPenWidth_4">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>90</y>
+          <width>66</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>0</number>
+        </property>
+        <property name="maximum">
+         <number>20</number>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_text">
+       <attribute name="title">
+        <string>Text</string>
+       </attribute>
+       <widget class="QTextEdit" name="textEdit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>210</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>210</width>
+          <height>80</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>90</y>
+          <width>170</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_56">
+         <item>
+          <widget class="QLabel" name="label_71">
+           <property name="text">
+            <string>Text Color: </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_textColor">
+           <item>
+            <property name="text">
+             <string>Blue</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Red</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Green</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Yellow</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Black</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>White</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Cyan</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Magenta</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Gray</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>130</y>
+          <width>206</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_57">
+         <item>
+          <widget class="QLabel" name="label_72">
+           <property name="text">
+            <string>Text Alignment:  </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_text_alignment">
+           <item>
+            <property name="text">
+             <string>Left</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Centered</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Right</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Top</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Bottom</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>90</y>
+          <width>211</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_58">
+         <item>
+          <widget class="QLabel" name="label_73">
+           <property name="text">
+            <string>Text Point Size: </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBox_text_point_size">
+           <property name="minimum">
+            <number>-1</number>
+           </property>
+           <property name="maximum">
+            <number>50</number>
+           </property>
+           <property name="value">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>0</y>
+          <width>271</width>
+          <height>38</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_59">
+         <item>
+          <widget class="QLabel" name="label_75">
+           <property name="text">
+            <string>Text Font Family: </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_textFontFamily">
+           <item>
+            <property name="text">
+             <string>Comic Sans MS</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Courier</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Helvetica</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Times</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>50</y>
+          <width>258</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_60">
+         <item>
+          <widget class="QLabel" name="label_76">
+           <property name="text">
+            <string>Text Font Weight: </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_fontWeight">
+           <item>
+            <property name="text">
+             <string>Thin</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Light</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Normal</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Bold</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>130</y>
+          <width>241</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_61">
+         <item>
+          <widget class="QLabel" name="label_87">
+           <property name="text">
+            <string>Text Font Style: </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_textFontStyles">
+           <item>
+            <property name="text">
+             <string>Style Normal</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Style Italic</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Style Oblique</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>0</y>
+          <width>144</width>
+          <height>86</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_22">
+         <item>
+          <widget class="QLabel" name="label_77">
+           <property name="text">
+            <string>Coordinate Values</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_62">
+           <item>
+            <widget class="QLabel" name="label_78">
+             <property name="text">
+              <string>x - value:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_text_X">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_63">
+           <item>
+            <widget class="QLabel" name="label_79">
+             <property name="text">
+              <string>y - value:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_text_Y">
+             <property name="maximum">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>90</y>
+          <width>144</width>
+          <height>86</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_23">
+         <item>
+          <widget class="QLabel" name="label_80">
+           <property name="text">
+            <string>Text Box Size</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_64">
+           <item>
+            <widget class="QLabel" name="label_81">
+             <property name="text">
+              <string>Width:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_text_box_width">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_65">
+           <item>
+            <widget class="QLabel" name="label_82">
+             <property name="text">
+              <string>Height:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_text_box_hight">
+             <property name="maximum">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>30</y>
+          <width>91</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add Shape</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_setProperties">
+     <attribute name="title">
+      <string>Save/Load</string>
+     </attribute>
+     <widget class="QLabel" name="label_52">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>20</y>
+        <width>231</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Set properties of shapes added:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>100</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>100</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Tab_Move">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Move</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>30</y>
+        <width>262</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_25">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_67">
+         <item>
+          <widget class="QLabel" name="label_74">
+           <property name="text">
+            <string>Move Shape with ID #:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBox_move_id">
+           <property name="minimum">
+            <number>0</number>
+           </property>
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_70">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_69">
+           <item>
+            <widget class="QLabel" name="label_83">
+             <property name="text">
+              <string>X-value: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_moveX">
+             <property name="minimum">
+              <number>-1000</number>
+             </property>
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_68">
+           <item>
+            <widget class="QLabel" name="label_84">
+             <property name="text">
+              <string>Y-value: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_moveY">
+             <property name="minimum">
+              <number>-1000</number>
+             </property>
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_move">
+         <property name="text">
+          <string>Move Shape</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>140</y>
+        <width>331</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_26">
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_85">
+         <property name="text">
+          <string>Specify which coordinate (1st, 2nd, etc.) if you </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_71">
+         <item>
+          <widget class="QLabel" name="label_86">
+           <property name="text">
+            <string>want to change a line, polyline, or polygon:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBox_moveCoordinate">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>8</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_delete">
+     <attribute name="title">
+      <string>Delete Shape</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>30</y>
+        <width>336</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_24">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_66">
+         <item>
+          <widget class="QLabel" name="label_70">
+           <property name="text">
+            <string>Delete Shape with ID #:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBox_delete_id">
+           <property name="minimum">
+            <number>0</number>
+           </property>
+           <property name="maximum">
+            <number>7000</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_deleteShape">
+         <property name="text">
+          <string>Delete Shape</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="RenderArea" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1021</width>
+      <height>511</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1019</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuContact">
+    <property name="title">
+     <string>Contact us</string>
+    </property>
+    <addaction name="actionContact_Info"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuContact"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionLogin">
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </action>
+  <action name="actionEnable_Disable_Privledges">
+   <property name="text">
+    <string>Enable Actions</string>
+   </property>
+  </action>
+  <action name="actionContact_Info">
+   <property name="text">
+    <string>Contact Info</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>RenderArea</class>
+   <extends>QWidget</extends>
+   <header>renderarea.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
